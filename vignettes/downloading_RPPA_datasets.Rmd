@@ -80,7 +80,7 @@ error = function(cond){
 })
 ```
 
-## Reading downloaded clinical dataset
+## Reading downloaded RPPA dataset
 
 ### Shortening paths and directories 
 
