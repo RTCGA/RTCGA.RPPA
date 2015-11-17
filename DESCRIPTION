@@ -1,7 +1,7 @@
 Package: RTCGA.RPPA
 Type: Package
 Title: RPPA datasets from The Cancer Genome Atlas Project
-Version: 0.99.2
+Version: 0.99.3
 Date: 2015-11-17
 Author: Witold Chodor <witoldchodor@gmail.com>
 Maintainer: Marcin Kosinski <m.p.kosinski@gmail.com>
