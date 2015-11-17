@@ -2,10 +2,13 @@ Package: RTCGA.RPPA
 Type: Package
 Title: RPPA datasets from The Cancer Genome Atlas Project
 Version: 0.99.2
-Date: 2015-11-11
+Date: 2015-11-17
 Author: Witold Chodor <witoldchodor@gmail.com>
 Maintainer: Marcin Kosinski <m.p.kosinski@gmail.com>
-Description: Package provides RPPA datasets from The Cancer Genome Atlas Project for all available cohorts types from http://gdac.broadinstitute.org/. Data format is explained here https://wiki.nci.nih.gov/display/TCGA/Protein+Array+Data+Format+Specification?src=search
+Description: Package provides RPPA datasets from The Cancer Genome Atlas Project
+    for all available cohorts types from http://gdac.broadinstitute.org/. Data
+    format is explained here https://wiki.nci.nih.gov/display/TCGA/Protein+Array
+    +Data+Format+Specification?src=search
 License: GPL-2
 LazyData: TRUE
 Repository: Bioconductor
@@ -18,4 +21,4 @@ Suggests:
 biocViews: Annotation Data
 VignetteBuilder: knitr
 NeedsCompilation: no
-RoxygenNote: 5.0.0
+RoxygenNote: 5.0.1

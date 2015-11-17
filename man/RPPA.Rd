@@ -29,6 +29,7 @@
 \alias{PCPG.RPPA}
 \alias{PRAD.RPPA}
 \alias{READ.RPPA}
+\alias{RPPA}
 \alias{SKCM.RPPA}
 \alias{STAD.RPPA}
 \alias{STES.RPPA}
@@ -38,7 +39,6 @@
 \alias{UCEC.RPPA}
 \alias{UCS.RPPA}
 \alias{UVM.RPPA}
-\alias{RPPA}
 \title{RPPA datasets from TCGA project}
 \source{
 \url{http://gdac.broadinstitute.org/}
