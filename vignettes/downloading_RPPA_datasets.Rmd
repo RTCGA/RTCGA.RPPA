@@ -1,6 +1,6 @@
 ---
 title: "Using `RTCGA` package to download RPPA data that are included in `RTCGA.RPPA` package"
-subtitle: "Date of datasets release: 2015-08-21"
+subtitle: "Date of datasets release: 2015-11-01"
 author: "Witold Chodor"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -26,13 +26,14 @@ source("http://bioconductor.org/biocLite.R")
 biocLite("RTCGA")
 ```
 
-or from github
+or use below code to download the development version which is like to be more bug-free than the release version on Bioconductor:
+
 ```{r, eval=FALSE}
 if (!require(devtools)) {
     install.packages("devtools")
     require(devtools)
 }
-biocLite("RTCGA/RTCGA")
+install_github("RTCGA/RTCGA")
 ```
 
 Furthermore, `RTCGA` package transforms TCGA data into form which is convenient to use in R statistical package. Those data transformations can be a part of statistical analysis pipeline which can be more reproducible with `RTCGA`.
@@ -50,7 +51,7 @@ library(RTCGA)
 checkTCGA('Dates')
 ```
 
-Version 1.0 of `RTCGA.RPPA` package contains RPPA datasets which were released `2015-08-21`. They were downloaded in the following way (which is mainly copied from [http://marcinkosinski.github.io/RTCGA/](http://marcinkosinski.github.io/RTCGA/):
+Version 1.0 of `RTCGA.RPPA` package contains RPPA datasets which were released `2015-11-01`. They were downloaded in the following way (which is mainly copied from [http://marcinkosinski.github.io/RTCGA/](http://marcinkosinski.github.io/RTCGA/):
 
 ## Available cohorts
 
@@ -66,7 +67,7 @@ For all cohorts the following code downloads the RPPA data.
 ## Downloading RPPA files
 ```{r, eval=FALSE}
 # dir.create( "data2" ) # name of a directory in which data will be stored
-releaseDate <- "2015-08-21"
+releaseDate <- "2015-11-01"
 sapply( cohorts, function(element){
 tryCatch({
 downloadTCGA( cancerTypes = element, 
@@ -118,6 +119,7 @@ list.files( "data2") %>%
       })
 ```
 
+
 Below is the code that automatically assigns paths to files for all RPPA files for all available cohorts types downloaded to `data2` folder.
 
 ```{r}
@@ -142,7 +144,7 @@ Because of the fact that RPPA data are transposed in downloaded files, there has
 
 ```{r, eval=FALSE}
 ls() %>%
-   grep("RPPA\\.path", x = ., value = TRUE) %>% 
+   grep("RPPA\\.path", x = ., value = TRUE) %>%
    sapply(function(element){
       tryCatch({
          readTCGA(get(element, envir = .GlobalEnv),
@@ -172,9 +174,9 @@ grep( "RPPA", ls(), value = TRUE) %>%
                       KICH.RPPA,KIPAN.RPPA,KIRC.RPPA,KIRP.RPPA,
                       LGG.RPPA,LIHC.RPPA,LUAD.RPPA,LUSC.RPPA,
                       MESO.RPPA,OV.RPPA,PAAD.RPPA,PCPG.RPPA,
-                      PRAD.RPPA,READ.RPPA,SKCM.RPPA,STAD.RPPA,
-                      STES.RPPA,TGCT.RPPA,THCA.RPPA,THYM.RPPA,
-                      UCEC.RPPA,UCS.RPPA,UVM.RPPA,
+                      PRAD.RPPA,READ.RPPA,SARC.RPPA,SKCM.RPPA,
+                      STAD.RPPA,STES.RPPA,TGCT.RPPA,THCA.RPPA,
+                      THYM.RPPA,UCEC.RPPA,UCS.RPPA,UVM.RPPA,
                       overwrite = TRUE,
                       compress="xz")
 ```

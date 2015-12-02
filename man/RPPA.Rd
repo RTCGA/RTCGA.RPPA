@@ -3,7 +3,7 @@
 \docType{data}
 \name{RPPA}
 \alias{ACC.RPPA}
-\alias{ACC.RPPA,BLCA.RPPA,BRCA.RPPA,CESC.RPPA,CHOL.RPPA,COAD.RPPA,COADREAD.RPPA,DLBC.RPPA,ESCA.RPPA,GBM.RPPA,GBMLGG.RPPA,HNSC.RPPA,KICH.RPPA,KIPAN.RPPA,KIRC.RPPA,KIRP.RPPA,LGG.RPPA,LIHC.RPPA,LUAD.RPPA,LUSC.RPPA,MESO.RPPA,OV.RPPA,PAAD.RPPA,PCPG.RPPA,PRAD.RPPA,READ.RPPA,SKCM.RPPA,STAD.RPPA,STES.RPPA,TGCT.RPPA,THCA.RPPA,THYM.RPPA,UCEC.RPPA,UCS.RPPA,UVM.RPPA}
+\alias{ACC.RPPA,BLCA.RPPA,BRCA.RPPA,CESC.RPPA,CHOL.RPPA,COAD.RPPA,COADREAD.RPPA,DLBC.RPPA,ESCA.RPPA,GBM.RPPA,GBMLGG.RPPA,HNSC.RPPA,KICH.RPPA,KIPAN.RPPA,KIRC.RPPA,KIRP.RPPA,LGG.RPPA,LIHC.RPPA,LUAD.RPPA,LUSC.RPPA,MESO.RPPA,OV.RPPA,PAAD.RPPA,PCPG.RPPA,PRAD.RPPA,READ.RPPA,SARC.RPPA,SKCM.RPPA,STAD.RPPA,STES.RPPA,TGCT.RPPA,THCA.RPPA,THYM.RPPA,UCEC.RPPA,UCS.RPPA,UVM.RPPA}
 \alias{BLCA.RPPA}
 \alias{BRCA.RPPA}
 \alias{CESC.RPPA}
@@ -30,6 +30,7 @@
 \alias{PRAD.RPPA}
 \alias{READ.RPPA}
 \alias{RPPA}
+\alias{SARC.RPPA}
 \alias{SKCM.RPPA}
 \alias{STAD.RPPA}
 \alias{STES.RPPA}
@@ -96,6 +97,8 @@ PRAD.RPPA
 
 READ.RPPA
 
+SARC.RPPA
+
 SKCM.RPPA
 
 STAD.RPPA
@@ -121,7 +124,7 @@ Data frames with RPPA data.
 Package provides RPPA datasets from The Cancer Genome Atlas Project for
 all available cohorts types from \url{http://gdac.broadinstitute.org/}.
 Data were downloaded using \link{RTCGA-package} and contain snapshots
-for the date: \code{2015-08-21}. The process is described here:
+for the date: \code{2015-11-01}. The process is described here:
 \url{http://mi2-warsaw.github.io/RTCGA.data/}.
 Use cases, examples and information about datasets in \pkg{RTCGA.data}
 family can be found here: \code{browseVignettes("RTCGA")}. RPPA data format
