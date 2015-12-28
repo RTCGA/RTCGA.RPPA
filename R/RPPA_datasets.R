@@ -10,6 +10,7 @@
 #' family can be found here: \code{browseVignettes("RTCGA")}. RPPA data format
 #' is explained here
 #' \url{https://wiki.nci.nih.gov/display/TCGA/Protein+Array+Data+Format+Specification?src=search}.
+#' Converting \pkg{RTCGA.RPPA} to Bioconductor datasets' format is explained here \link{convertTCGA}.
 #' 
 #' @examples
 #' 
